@@ -13,8 +13,8 @@ import com.soyo.Models.HotelItem;
 import java.util.List;
 
 public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.ViewHolder> {
-    Context context;
-    List<HotelItem> hotelItemList;
+    private Context context;
+    private List<HotelItem> hotelItemList;
 
     public HotelAdapter(Context context, List<HotelItem> hotelItemList) {
         this.context = context;
