@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent" >
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appbar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#000">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical"
+                    android:text="Soyo App"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
+
+
+            </FrameLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_below="@id/appbar"
+        android:id="@+id/imageHotel"
+        android:src="@drawable/hotel"
+        android:scaleType="fitXY"
+        android:layout_margin="15dp"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        />
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_below="@id/appbar"
+        android:layout_toRightOf="@id/imageHotel"
+        android:layout_margin="15dp"
+        android:src="@drawable/airplane"
+        android:scaleType="fitXY"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:id="@+id/imageFlights"
+        />
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_below="@id/imageHotel"
+        android:id="@+id/imageBookNow"
+        android:src="@drawable/money"
+        android:scaleType="fitXY"
+        android:layout_margin="15dp"
+        android:padding="10dp"
+        />
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_below="@id/imageFlights"
+        android:layout_toRightOf="@+id/imageBookNow"
+
+        android:src="@drawable/compare"
+        android:scaleType="fitXY"
+        android:id="@+id/imageCompare"
+        android:layout_margin="15dp"
+        android:padding="10dp"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_below="@id/imageBookNow"
+        android:id="@+id/imageDeals"
+
+        android:src="@drawable/deals"
+        android:scaleType="fitCenter"
+        android:layout_margin="15dp"
+        android:padding="10dp"
+        />
+
+</RelativeLayout>
+</ScrollView>

@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         Runnable run=new Runnable() {
             @Override
             public void run() {
-                Intent intent=new Intent(MainActivity.this,HomeActivity.class);
+                Intent intent=new Intent(MainActivity.this,MenuActivity.class);
                 startActivity(intent);
                 finish();
             }
