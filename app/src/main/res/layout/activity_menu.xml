@@ -49,7 +49,6 @@
         android:src="@drawable/hotel"
         android:scaleType="fitXY"
         android:layout_margin="15dp"
-        android:layout_marginTop="20dp"
         android:padding="10dp"
         />
     <ImageView
@@ -60,7 +59,6 @@
         android:layout_margin="15dp"
         android:src="@drawable/airplane"
         android:scaleType="fitXY"
-        android:layout_marginTop="20dp"
         android:padding="10dp"
         android:id="@+id/imageFlights"
         />
@@ -86,13 +84,25 @@
         android:layout_margin="15dp"
         android:padding="10dp"
         />
+
     <ImageView
+        android:id="@+id/imageDeals"
         android:layout_width="match_parent"
         android:layout_height="180dp"
         android:layout_below="@id/imageBookNow"
-        android:id="@+id/imageDeals"
 
-        android:src="@drawable/deals"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="15dp"
+        android:padding="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/deals" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_below="@id/imageDeals"
+        android:id="@+id/employees"
+
+        android:src="@drawable/logo"
         android:scaleType="fitCenter"
         android:layout_margin="15dp"
         android:padding="10dp"

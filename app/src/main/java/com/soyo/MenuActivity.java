@@ -8,7 +8,7 @@ import android.widget.ImageView;
 
 public class MenuActivity extends AppCompatActivity {
 
-    ImageView imageHotel, imageFlight, imageBookNow, imageCompare, imageDeals;
+    ImageView imageHotel, imageFlight, imageBookNow, imageCompare, imageDeals, imageEmployees;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +20,7 @@ public class MenuActivity extends AppCompatActivity {
         imageBookNow = findViewById(R.id.imageBookNow);
         imageCompare = findViewById(R.id.imageCompare);
         imageDeals = findViewById(R.id.imageDeals);
+        imageEmployees=findViewById(R.id.employees);
 
         imageHotel.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,5 +36,6 @@ public class MenuActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
     }
 }
