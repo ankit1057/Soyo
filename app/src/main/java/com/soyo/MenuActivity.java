@@ -36,6 +36,13 @@ public class MenuActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        imageEmployees.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuActivity.this, EmployeeActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }
