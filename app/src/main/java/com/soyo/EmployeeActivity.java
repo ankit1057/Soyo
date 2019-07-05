@@ -1,10 +1,11 @@
 package com.soyo;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -26,6 +27,7 @@ import java.util.List;
 public class EmployeeActivity extends AppCompatActivity {
     RecyclerView employeeRecycler;
     List<EmployeeItem> employeeItemList;
+    private String TAG = EmployeeActivity.class.getSimpleName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +48,7 @@ public class EmployeeActivity extends AppCompatActivity {
                 for (int i=0;i<response.length();i++){
                     try {
                         JSONObject jsonObject=response.getJSONObject(i);
+                        Log.d(TAG, "onResponse: " + jsonObject.toString());
                         EmployeeItem employeeItem=new EmployeeItem(
                                 jsonObject.getString("id"),
                                 jsonObject.getString("employee_name"),
